@@ -5,43 +5,15 @@
         <meta charset="UTF-8">
         <meta name="description" content="UTC date">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Pawan Kumar Regoti">
         <meta name="theme-color" content="#0d1117">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>UTC Date</title>
-        <link rel="manifest" href="manifest.json">
-        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <style type="text/css">
-            body {
-                background-color: #0d1117;
-            }
-
-            .centerPiece {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            p {
-                color: #c9d1d9;
-                font-size: xx-large;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            }
-        </style>
-        <script type="text/javascript">
-            if ("serviceWorker" in navigator) {
-                window.addEventListener("load", () => {
-                    navigator.serviceWorker && navigator.serviceWorker.register("./service-worker.js");
-                });
-            }
-
-            window.onload = async () => {
-                while (true) {
-                    await new Promise(resolve => setTimeout(resolve, 1000));
-                    document.getElementById("utcDate").innerHTML = new Date().toUTCString();
-                }
-            }
-        </script>
+        <link rel="manifest" href="./manifest.json">
+        <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./src/index.js"></script>
     </head>
 
     <body>
