@@ -4,7 +4,10 @@
     "version": "1.0",
     "manifest_version": 3,
     "display": "standalone",
-    "start_url": "/",
+    "start_url": "index.html",
+    "background": {
+        "service_worker": "service_worker.js"
+    },
     "scope": "/",
     "background_color": "#0d1117",
     "theme_color": "#0d1117",
