@@ -3,14 +3,11 @@
     "description": "UTC date time",
     "version": "1.0",
     "manifest_version": 3,
-    "start_url": "/index.html",
-    "background_color": "#0d1117",
     "display": "standalone",
+    "start_url": "/",
     "scope": "/",
+    "background_color": "#0d1117",
     "theme_color": "#0d1117",
-    "background": {
-        "service_worker": "/background.js"
-    },
     "icons":[
         {
             "src":"/images/android-chrome-192x192.png",
